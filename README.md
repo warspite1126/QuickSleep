@@ -7,7 +7,6 @@ for IntelliJ IDEA
 1. `src/main/resources/plugin.yml`のnameとmain
 1. `gradle.properties`内の`package_*`
 1. `settings.gradle`内の`rootProject.name`
-1. 
 
 Gradleタスク"serve"を実行してください。    
 dev-serverディレクトリが生成され、その中にeula.txtが生成されます。    
