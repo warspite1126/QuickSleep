@@ -1,4 +1,9 @@
-name: "spigot-boilerplate"
-main: "com.example.spigot_boilerplate.Main"
+name: "QuickSleep"
+main: "navy.warspite.spigot.QuickSleep.Main"
 version: "1.0"
-api-version: "1.14"
+api-version: "1.15"
+commands:
+  getinsomnia:
+    description: Get TIME_SINCE_REST
+  setinsomnia:
+    description: Set TIME_SINCE_REST

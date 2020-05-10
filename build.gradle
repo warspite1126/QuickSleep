@@ -89,17 +89,17 @@ task buildSpigot {
         javaexec {
             workingDir = buildToolsDir.path
             main = "-jar"
-            args = ["buildtools.jar", "--rev", "1.14.4"]
+            args = ["buildtools.jar", "--rev", "1.15.2"]
         }
     }
-    onlyIf { !file("buildtools/spigot-1.14.4.jar").exists() }
+    onlyIf { !file("buildtools/spigot-1.15.2.jar").exists() }
     dependsOn 'downloadSpigotBuildTools'
 }
 
 task prepareDevServer {
     doFirst {
         copy {
-            from "buildtools/spigot-1.14.4.jar"
+            from "buildtools/spigot-1.15.2.jar"
             into "dev-server"
         }
         copy {
@@ -127,7 +127,7 @@ task serve {
         javaexec {
             workingDir = devServerDir.path
             main = '-jar'
-            args = ['spigot-1.14.4.jar']
+            args = ['spigot-1.15.2.jar']
         }
     }
     timeout = Duration.ofDays(1)
